@@ -24,3 +24,22 @@
      - $ cd .git : git이 내부적으로 관리하는 폴더이다. 여기에 접속하면 (GIT_DIR!)이라고 브랜치가 나온다.
      - $ rm -rf .git : recursively, forcefully .git 폴더를 삭제한다. demo 폴더는 git init 이전 상태로 돌아가게된다
     
+### 19. Start with existing project
+     - $ git init . : 깃 init을 하는데 .의 의미는 현재 폴더라는 것을 뜻한다.
+     
+### 20. Commit and Message   
+     - $ touch LICENSE.md : LICENSE.md 파일을 생성한다.
+     - $ vim LICENSE.md : LICENSE.md 파일에 텍스트를 입력할 수 있다.
+     - $ git add . : 여기서 .을 왜 쓰는지는 잘 모르겠음
+     - $ git commit : Notepad++ 창이 뜨면서 커밋 메시지를 입력하고 저장할 수 있다.
+
+### 21. Commit Details with Log and Show
+     - $ git log : 커밋 로그를 보여주는 명령어이다.
+     - $ git show : 각각의 파일들에 어떤 것들이 변경되었는지 디테일하게 보여주는 명령어
+### 22. Express Commit
+    - $ git ls-files : 현재 트랙킹 되고 있는 파일들만 보여준다.
+                        만약 새로운 파일을 생성하고 커밋을 하지 않았다면 이 명령어로는 해당 파일이 보이지 않음.
+    - $ touch new.file , $rm new.file : touch는 파일을 생성, rm은 파일을 제거
+    - $ git commit -a : staging area에 add와 동시에 commit을 하는 명령어
+    - $ git commit -am "update Readme" : -am을 쓰면 커밋 메시지까지 추가할 수 있다.
+
