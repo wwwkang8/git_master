@@ -43,3 +43,27 @@
     - $ git commit -a : staging area에 add와 동시에 commit을 하는 명령어
     - $ git commit -am "update Readme" : -am을 쓰면 커밋 메시지까지 추가할 수 있다.
 
+### 23. Backing out Changes
+     - $ git reset HEAD README.md : Staging 된 파일을 Unstaging 하는 명령어. 
+     - $ git checkout -- README.md : 파일이 수정되기 이전 상태로 변경하는 것. README.md 파일을 이전 상태로 바꾼다.
+
+### 24. History and Making New Commands with Alias
+     - $ git log --oneline --graph --decorate --all
+        - oneline : 간략화된 커밋 내역을 볼 수 있다. 한줄로 커밋 내용 확인
+        - graph : 브랜치 구조도를 볼 수 있다.
+        - decorate : 어떤 커밋들이 어느 브랜치 소속인지 보여줌
+        - all : 모든 브랜치의 히스토리 제공.
+     - $ git config --global alias.hist "log --oneline --graph --decorate --all"
+        : alias.hist는 "log --oneline --graph --decorate --all"에 별칭을 부여하는 것이다.
+        그래서 위의 log~all 명령어의 별칭은 hist가 된다. 이것을 config 파일에 전역으로 등록하는 명령어이다.
+     - $ git config --global --list : 내가 지정한 별칭을 config 파일의 리스트에서 찾을 수 있다.
+     - $ git hist : 이제 log~all 길게 입력하지 않아도 git hist만 입력해도 로그가 나온다.
+ ### 25. Rename and Delete Files
+     - $ git mv example.text demo.txt : example 파일을 demo 파일로 이름을 변경한다는 명령어
+        - 위 명령어를 하면 자동으로 staging으로 파일이 올라가게 된다. 변경을 적용하려면 commit을 한다.
+     - $ git rm demo.txt : demo.txt 파일을 제거한다.
+        - 위 명령어를 하면 자동으로 staging으로 파일이 올라간다. 변경을 적용하려면 commit을 해야한다.
+
+
+
+
