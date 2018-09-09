@@ -64,6 +64,15 @@
      - $ git rm demo.txt : demo.txt 파일을 제거한다.
         - 위 명령어를 하면 자동으로 staging으로 파일이 올라간다. 변경을 적용하려면 commit을 해야한다.
 
+### 26. Managing Files Outside of Git(Git 명령어가 아닌 일반 Bash명령어로 하는 것)
+     - $ mv LICENSE.md LICENSE.txt : LICENSE파일의 이름을 변경한다. 이 때 mv는 일반 Bash 명령어이다.
+     - $ git add -u : 기존파일에 변경(delete,modify)이 있으면 staging을 해준다. -u는 update에 해당한다. 
+                      하지만 Untracked 파일은 staging하지 않는다. 왜냐하면 기존에 없었던 파일이기 때문이다.
+     - $ git add -A : delete, add 된 파일들을 모두 staging 하는 명령어이다.
+     - $ rm myfile.txt : myfile.txt를 삭제하는 명령어. 이후에 commit을 해줘야 반영이 된다
 
-
-
+### 27. Git ignore 사용법
+     - $ touch app.txt : app.log 파일을 생성
+        - 이제부터 이 app.log 파일을 git ignore 해보겠습니다.
+     - $ touch .gitignore : gitignore 파일 생성.
+        - $ vi .gitignore : gitignore 파일을 편집한다. *.log을 입력하면 확장자가 log 인 모든 파일을 무시한다는 뜻
