@@ -22,6 +22,7 @@
 ### 31. Special Markers
     - HEAD : Last Commit of Current Branch
            : Can be Moved(Advanced)
+![head](https://user-images.githubusercontent.com/26863285/45581505-4b451500-b8da-11e8-8224-68c614cb5d44.png)
 
 ### 32. Simple Branching Example
     - $ git checkout -b updates : 기존에 modified된 파일이 있는 상태에서 -b updates로 브랜치를 생성하게 되면
@@ -33,8 +34,10 @@
 ### 33. Conflict Solution
     - 충돌 : 서로 다른 브랜치에서 동일한 부분의 코드를 변경할 때 충돌이 생긴다.
     깃은 원래 자동 머지를 해주지만 이러한 경우에는 개발자가 스스로 어떤 코드를 없애야할지 정해야한다.
-    - $ git merge tool : 충돌이 발생했을 때 코드간 충돌을 없애기 위해 하는 merge tool
-
+![conflict](https://user-images.githubusercontent.com/26863285/45581487-1b960d00-b8da-11e8-9610-399a0e1570dc.png)
+    - $ git mergetool : 충돌이 발생했을 때 코드간 충돌을 없애기 위해 하는 merge tool
+    - 노트패드가 열리면서 어떤 코드들을 남길지 선택할 수 있는 시나리오를 준다.
+    
 ### 34. Marking Special Events with Tagging
     - $ git tag mytag : 태그 생성
     - $ git tag --list : 태그 리스트 보여주는 명령어
