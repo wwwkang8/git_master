@@ -29,3 +29,11 @@
 ![default](https://user-images.githubusercontent.com/26863285/46252135-9d239880-c49f-11e8-90de-0e8a3a4ac409.png)
                              
                  [위와 같이 로컬에서 삭제된 브랜치의 원격 참조도 -p 명령어로 삭제됨을 확인할 수 있다.]
+
+
+### 72. Locally switch to a Branch on Github
+    - Github에서 update-readme 브랜치를 새로 생성한다. 그러면 현재 원격에는 update-readme 브랜치가 생성되고 로컬에는 현재 없는 상태이다.
+    - $ git branch -a : 원격 리포지토리에 생성된 update-readme 브랜치를 확인 가능하다.
+    - $ git fetch : 로컬리포지토리와 원격리포지토리를 탐색하여 비교한다.
+    - $ git checkout update-readme : 이렇게 하면 원격에 리포지토리가 있는지 검색하여 로컬과 동일하게 브랜치를 만들어준다.
+    
