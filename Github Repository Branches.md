@@ -37,3 +37,5 @@
     - $ git fetch : 로컬리포지토리와 원격리포지토리를 탐색하여 비교한다.
     - $ git checkout update-readme : 이렇게 하면 원격에 리포지토리가 있는지 검색하여 로컬과 동일하게 브랜치를 만들어준다.
     
+### 73. Cleaning Up By Deleting Branches and References
+    - 
